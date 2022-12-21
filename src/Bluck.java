@@ -21,7 +21,7 @@ public class Bluck {
             channels.add(c);
         }
         System.out.println("Waiting for result...");
-        for (var c : channels) {
+        for (channel c : channels) {
             x += c.readLong();
         }
         System.out.println("Result: " + x);
